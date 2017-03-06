@@ -44,12 +44,25 @@ var PruebaFuego = (() => {
 
 	}
 
+	var alternarListas = (primeraLista, segundaLista) => {
+		var listaAlternada = [];
+		primeraLista.forEach(function (valor, indice) {
+			listaAlternada.push(valor);
+			listaAlternada.push(segundaLista[indice]);
+		});
+
+		return listaAlternada;
+
+
+	}
+
 
 
 	return {
 		sumarListaFor,
 		sumarListaWhile,
-		sumarListaRecursion
+		sumarListaRecursion,
+		alternarListas,
 
 
 	}
@@ -64,3 +77,7 @@ console.log("Suma de lista con FOR: "+ iniciarPruebaFuego.sumarListaFor(listaNum
 console.log("Suma de lista con WHILE "+ iniciarPruebaFuego.sumarListaFor(listaNumerica) + "\n");
 
 console.log("Suma de lista con RECURSIÓN "+ iniciarPruebaFuego.sumarListaRecursion(0,listaNumerica) + "\n");
+
+
+console.log("Alternar listas "+ iniciarPruebaFuego.alternarListas([1, 2, 3],['a', 'b', 'c']) + "\n");
+
