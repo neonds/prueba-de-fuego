@@ -1,1 +1,5 @@
-Ejecutar: npm run app
+# Ejecutar: 
+
+```sh
+npm run app
+```
