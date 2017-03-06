@@ -1,0 +1,11 @@
+{
+  "name": "prueba-de-fuego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "author": "Guillermo B Díaz Solís",
+  "license": "ISC"
+}
